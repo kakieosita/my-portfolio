@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/my-logo.png" />
+    <script
+      src="https://kit.fontawesome.com/fe1a2981cf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/my-logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Front-End Web Developer</p>
+          <h1>Hi, I'm <span>Bonaventure</span> Kakie <br />From Nigeria</h1>
+        </div>
+      </div>
+    </div>
+    <!--About-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/me.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              Motivated and enthusiastic computer literate with a strong desire
+              to develop skills and knowledge in the field of technology.
+              Proficient in using various software applications and able to
+              learn new systems quickly. Seeking an entry-level position in a
+              dynamic organization where I can utilize my skills and grow within
+              the company.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-End Web Developer</span><br />Building Web
+                  Interfaces
+                </li>
+                <li>
+                  <span>Graphic Design</span><br />Designing Interfaces such as
+                  Magazines, Posters, Photo Editing & Flyers
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - Current</span><br />Teaching at Marist
+                  Bicentenary College Ngor-Okpala, Imo State, Nigeria
+                </li>
+                <li>
+                  <span>2019-2021</span><br />Computer Operator King of Kings
+                  Eye Clinic Imo State, Nigeria
+                </li>
+                <li>
+                  <span>2017-2018</span><br />Computer Instructor Systematic
+                  Computer Learning Centre, Imo State, Nigeria
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>West Africa Examination Certificate (WAEC)</span
+                  ><br />Ihenweorie Secondary School Imo State, Nigeria
+                </li>
+                <li>
+                  <span>Computer Science (National Diploma)</span><br />Federal
+                  Polytechnic Nekede Owerri, Nigeria
+                </li>
+                <li>
+                  <span>Certificate of Completion on Udemy</span><br />Build
+                  Responsive Real-World Websites with HTML and CSS
+                </li>
+                <li>
+                  <span>Certificate of Completion on Udemy</span><br />The
+                  Complete Javascript Course 2023: From Zero to Expert
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------Services--------->
+    <div id="services">
+      <div class="container">
+        <div class="subtitle">My Services</div>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I'm your go-to web designer, specializing in crafting beautiful
+              and functional websites using HTML and CSS. Whether you're a small
+              business, a freelancer, or just someone with a passion project,
+              I've got you covered!
+            </p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Graphic Design</h2>
+            <p>
+              Are you seeking captivating visuals that leave a lasting
+              impression? Look no further! I'm your dedicated graphic designer,
+              proficient in wielding design tools like Photoshop to turn your
+              ideas into stunning reality.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------portfolio------------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/omnifood.jpeg" />
+            <div class="layer">
+              <h3>Omnifood Website</h3>
+
+              <a href="https://omnifood-osita.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/camp travel.jpeg" />
+            <div class="layer">
+              <h3>Camp Travel Website</h3>
+
+              <a href="https://camptravel.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/nike website.jpeg" />
+            <div class="layer">
+              <h3>Nike Website</h3>
+
+              <a href="https://osi-nike.netlify.app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/kakieosita" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- 
+    -----------contact-form-------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="subtitle">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> kakieosita@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i> +2349037294550</p>
+            <div class="social-icons">
+              <a href="https://web.facebook.com/bonaventure.kakie.1"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+
+              <a href="https://github.com/kakieosita"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a href="images/Bonaventure's Resume (3).pdf" class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright © Bonaventure.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyNNP_dI2uOq26baTH6bpVjP6ygrvEegNszVIvNW_ufdr_W8shH7LDqCgz0Tc25O50/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
